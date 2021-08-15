@@ -1,0 +1,57 @@
+[
+    {
+        "createdAt": "2021-08-14T14:33:00.979Z",
+        "accountNr": "0194496491",
+        "balance": 10000
+    },
+    {
+        "createdAt": "2021-08-14T14:33:17.277Z",
+        "accountNr": "0154037414",
+        "balance": 8000
+    },
+    {
+        "createdAt": "2021-08-14T14:33:27.329Z",
+        "accountNr": "0195440966",
+        "balance": 3000
+    },
+    {
+        "createdAt": "2021-08-14T14:33:42.336Z",
+        "accountNr": "0151464162",
+        "balance": 17000
+    },
+    {
+        "createdAt": "2021-08-15T01:32:18.556Z",
+        "accountNr": "0139677601",
+        "balance": 17000
+    },
+    {
+        "createdAt": "2021-08-15T01:37:28.692Z",
+        "accountNr": "0111284680",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T01:39:28.033Z",
+        "accountNr": "0152374440",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T01:40:00.459Z",
+        "accountNr": "0151337202",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T01:41:19.753Z",
+        "accountNr": "0175219127",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T10:00:34.136Z",
+        "accountNr": "0139289300",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T17:31:29.836Z",
+        "accountNr": "1234567890",
+        "balance": 5000
+    }
+]

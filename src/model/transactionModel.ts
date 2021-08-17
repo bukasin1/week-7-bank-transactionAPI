@@ -10,7 +10,7 @@ let transactions: transactionObj[];
 try{
   transactions = require('../../databases/transactions.json')
 }catch(error){
-  console.log(error)
+  transactions = []
 }
 
 // console.log(transactions)

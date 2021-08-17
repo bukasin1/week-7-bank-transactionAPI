@@ -77,7 +77,7 @@ async function getTransaction(req: Request, res: Response): Promise<void>{
 async function getAccTransactions(req: Request, res: Response): Promise<void>{
   try{
     const transactions = await getAllTransactions()
-    if(transactions === undefined){
+    if(transactions === undefined || transactions.length === 0){
       res.status(404).send("No transactions made yet")
     }else{
       const accNum = req.params.accountNumber

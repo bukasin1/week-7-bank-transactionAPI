@@ -10,7 +10,7 @@ let accounts: accountObj[];
 try{
     accounts = require('../../databases/accounts.json')
 }catch(err){
-    console.log(err)
+    accounts = []
 }
 
 function getAllAccounts(): Promise<accountObj[]>{

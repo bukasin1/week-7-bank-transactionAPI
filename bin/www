@@ -5,8 +5,11 @@
  */
 
 var app = require('../dist/app').default;
+// import app from '../dist/app'
 var debug = require('debug')('008-setup:server');
+// import debug from 'debug'
 var http = require('http');
+// import http from 'http'
 
 /**
  * Get port from environment and store in Express.

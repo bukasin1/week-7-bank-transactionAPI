@@ -4,6 +4,8 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
+import router from './routes/index'
+
 const app = express();
 
 // view engine setup
@@ -16,6 +18,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+app.use('/', router);
+app.use("*", (req,res)=>{
+  res.status(200).json({
+    status: 'success',
+     msg: "please use the /company route"
+  })
+})
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
@@ -26,7 +36,7 @@ app.use(function (
   err: createError.HttpError,
   req: express.Request,
   res: express.Response,
-  _next: express.NextFunction
+  // _next: express.NextFunction
 ) {
   // set locals, only providing error in development
   res.locals.message = err.message;

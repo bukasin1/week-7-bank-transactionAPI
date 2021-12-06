@@ -61,12 +61,12 @@ async function createAccount(req: Request, res: Response): Promise<void>{
       if(accountNum.length < 10 || accountNum.length > 10){
         res.status(404).send({error : "Invalid account number, please enter a 10 digit number"})
       }else{
-        const check = accounts.some(acc => acc.accountNr === accountNumber)
+        const check = accounts.some(acc => acc.accountNr === accountNum)
         if(check){
           res.status(404).send({error : "Account number already exists"})
         }else{
           const accDetails = {
-            accountNr : accountNumber,
+            accountNr : accountNum,
             balance : amount
           }
           const newAcc = await createNewAccount(accDetails)

@@ -11,8 +11,12 @@ try {
     transactions = require('../../databases/transactions.json');
 }
 catch (error) {
-    console.log(error);
+    transactions = [];
 }
+// console.log(transactions)
+// console.log(uuid)
+// function getAll(){
+// }
 function create(transaction) {
     return new Promise((resolve) => {
         const date = new Date;
@@ -79,4 +83,5 @@ function getTransactionsByAcc(accNum) {
     });
 }
 exports.getTransactionsByAcc = getTransactionsByAcc;
+console.log([1, 5, 3, 4].find(e => e === 2));
 //# sourceMappingURL=transactionModel.js.map

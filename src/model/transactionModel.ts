@@ -10,9 +10,15 @@ let transactions: transactionObj[];
 try{
   transactions = require('../../databases/transactions.json')
 }catch(error){
-  console.log(error)
+  transactions = []
 }
 
+// console.log(transactions)
+// console.log(uuid)
+
+// function getAll(){
+
+// }
 
 function create(transaction: transactionObj): Promise<transactionObj>{
   return new Promise((resolve) => {
@@ -77,5 +83,7 @@ function getTransactionsByAcc(accNum: string): Promise<(transactionObj | undefin
     }
   })
 }
+
+console.log([1,5,3,4].find(e => e === 2))
 
 export { create, getAllTransactions, getOneTransaction, getTransactionsByAcc }

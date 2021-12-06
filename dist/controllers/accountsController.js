@@ -12,7 +12,7 @@ const accountModel_1 = require("../model/accountModel");
 async function getAccounts(req, res) {
     try {
         const accounts = await accountModel_1.getAllAccounts();
-        if (accounts === undefined) {
+        if (accounts === undefined || accounts.length === 0) {
             res.status(404).send("No accounts created yet");
         }
         else {

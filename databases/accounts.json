@@ -12,7 +12,7 @@
     {
         "createdAt": "2021-08-14T14:33:27.329Z",
         "accountNr": "0195440966",
-        "balance": 5000
+        "balance": 15000
     },
     {
         "createdAt": "2021-08-14T14:33:42.336Z",
@@ -22,7 +22,7 @@
     {
         "createdAt": "2021-08-15T01:32:18.556Z",
         "accountNr": "0139677601",
-        "balance": 15000
+        "balance": 3000
     },
     {
         "createdAt": "2021-08-15T01:37:28.692Z",
@@ -45,8 +45,13 @@
         "balance": 5000
     },
     {
-        "createdAt": "2021-08-15T10:48:45.855Z",
+        "createdAt": "2021-08-15T10:00:34.136Z",
+        "accountNr": "0139289300",
+        "balance": 5000
+    },
+    {
+        "createdAt": "2021-08-15T17:31:29.836Z",
         "accountNr": "1234567890",
-        "balance": 20000
+        "balance": 5000
     }
 ]

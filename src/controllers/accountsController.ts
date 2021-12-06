@@ -12,7 +12,7 @@ import { getAllAccounts, getOneAccount, createNewAccount } from '../model/accoun
 async function getAccounts(req: Request, res: Response): Promise<void>{
   try{
     const accounts = await getAllAccounts()
-    if(accounts === undefined){
+    if(accounts === undefined || accounts.length === 0){
       res.status(404).send("No accounts created yet")
     }else{
       res.status(200).send(accounts)

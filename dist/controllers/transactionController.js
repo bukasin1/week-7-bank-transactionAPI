@@ -71,7 +71,6 @@ async function getTransaction(req, res) {
             res.status(404).send("No transactions made yet");
         }
         else {
-            console.log(req.params);
             const id = req.params.id;
             const transaction = await transactionModel_1.getOneTransaction(id);
             if (!transaction) {
@@ -90,7 +89,7 @@ exports.getTransaction = getTransaction;
 async function getAccTransactions(req, res) {
     try {
         const transactions = await transactionModel_1.getAllTransactions();
-        if (transactions === undefined) {
+        if (transactions === undefined || transactions.length === 0) {
             res.status(404).send("No transactions made yet");
         }
         else {
